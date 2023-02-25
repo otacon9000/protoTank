@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-tankSurvivor-3318.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivor.init.gen.cpp.obj"
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivorGameModeBase.gen.cpp.obj"
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivor.cpp.obj"
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivorGameModeBase.cpp.obj"
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\Default.rc2.res"
+/OUT:"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\UnrealEditor-tankSurvivor-3318.lib"

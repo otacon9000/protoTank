@@ -1,7 +1,7 @@
-"C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Inc\tankSurvivor\UHT\tankSurvivor.init.gen.cpp"
+"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Inc\tankSurvivor\UHT\tankSurvivor.init.gen.cpp"
 /I .
-/I "C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Inc\tankSurvivor\UHT"
-/I "C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Source"
+/I "C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Inc\tankSurvivor\UHT"
+/I "C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Source"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -279,12 +279,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\Definitions.tankSurvivor.h"
-/Yu"C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivor.init.gen.cpp.obj"
-/sourceDependencies "C:\Users\andre\Documents\Unreal Projects\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivor.init.gen.cpp.dep.json"
+/FI"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\Definitions.tankSurvivor.h"
+/Yu"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\tankSurvivorEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivor.init.gen.cpp.obj"
+/sourceDependencies "C:\Users\andre\Documents\Unreal Projects\protoTank\tankSurvivor\Intermediate\Build\Win64\UnrealEditor\Development\tankSurvivor\tankSurvivor.init.gen.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi
