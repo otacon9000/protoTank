@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/andre/Documents/Unreal Projects/protoTank/tankSurvivor/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset",
+				"C:/Users/andre/Documents/Unreal Projects/protoTank/tankSurvivor/Content/StarterContent/Maps/Minimal_Default.umap",
+				"C:/Users/andre/Documents/Unreal Projects/protoTank/tankSurvivor/Content/StarterContent/Props/Materials/M_Chair.uasset",
+				"C:/Users/andre/Documents/Unreal Projects/protoTank/tankSurvivor/Content/StarterContent/Props/Materials/M_TableRound.uasset",
 				"C:/Users/andre/Documents/Unreal Projects/tankSurvivor/Content/StarterContent/Particles/P_Ambient_Dust.uasset",
 				"C:/Users/andre/Documents/Unreal Projects/tankSurvivor/Content/StarterContent/Maps/Minimal_Default.umap"
 			]
