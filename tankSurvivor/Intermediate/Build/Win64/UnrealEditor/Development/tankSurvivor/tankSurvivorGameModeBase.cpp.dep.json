@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\source\\tanksurvivor\\tanksurvivorgamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\intermediate\\build\\win64\\tanksurvivoreditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\intermediate\\build\\win64\\unrealeditor\\development\\tanksurvivor\\definitions.tanksurvivor.h",
+            "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\source\\tanksurvivor\\tanksurvivorgamemodebase.h",
+            "e:\\games\\epic\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "e:\\games\\epic\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "e:\\games\\epic\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "e:\\games\\epic\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\intermediate\\build\\win64\\unrealeditor\\inc\\tanksurvivor\\uht\\tanksurvivorgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

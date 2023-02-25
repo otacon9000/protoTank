@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\source\\tanksurvivor\\tanksurvivor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\intermediate\\build\\win64\\tanksurvivoreditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\intermediate\\build\\win64\\unrealeditor\\development\\tanksurvivor\\definitions.tanksurvivor.h",
+            "c:\\users\\andre\\documents\\unreal projects\\tanksurvivor\\source\\tanksurvivor\\tanksurvivor.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

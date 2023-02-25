@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\andre\\Documents\\Unreal Projects\\tankSurvivor\\Source\\tankSurvivor\\tankSurvivor.Build.cs",
+		"C:\\Users\\andre\\Documents\\Unreal Projects\\tankSurvivor\\Source\\tankSurvivor.Target.cs",
+		"C:\\Users\\andre\\Documents\\Unreal Projects\\tankSurvivor\\Source\\tankSurvivorEditor.Target.cs"
+	],
+	"EngineVersion": "5.1.0"
+}
