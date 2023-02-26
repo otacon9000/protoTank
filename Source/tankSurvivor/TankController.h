@@ -27,13 +27,19 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(EditAnywhere)
-		UShapeComponent* CollisionBox;
+	UShapeComponent* CollisionBox;
 
 	UPROPERTY(EditAnywhere)
-		float speed = 10.0f;
+	float speed = 10.0f;
+	
+	UPROPERTY(EditAnywhere, Category="Spawning")
+	TSubclassOf<class ABulletController> bulletBP;
+
+
 
 	void MoveAxisX(float axisValue);
 	void MoveAxisY(float axisValue);
+	void OnShoot();
 
 	FVector currentVelocity;
 

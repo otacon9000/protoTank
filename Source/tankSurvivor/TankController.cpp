@@ -3,6 +3,7 @@
 
 #include "TankController.h"
 #include "Components/BoxComponent.h"
+#include "BulletController.h"
 
 // Sets default values
 ATankController::ATankController()
@@ -40,6 +41,7 @@ void ATankController::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 	InputComponent->BindAxis("MoveX", this, &ATankController::MoveAxisX);
 	InputComponent->BindAxis("MoveY", this, &ATankController::MoveAxisY);
+	InputComponent->BindAction("PrimaryFire", IE_Pressed, this, &ATankController::OnShoot);
 
 }
 
@@ -51,4 +53,18 @@ void ATankController::MoveAxisX(float axisValue)
 void ATankController::MoveAxisY(float axisValue)
 {
 	currentVelocity.Y = axisValue * 100.0f;
+}
+
+void ATankController::OnShoot()
+{
+	UWorld* World = GetWorld();
+
+	if (World)
+	{
+		FVector Location = GetActorLocation();
+		UE_LOG(LogTemp, Warning, TEXT("Location, %f %f"), Location.X, Location.Y);
+
+		World->SpawnActor<ABulletController>(bulletBP, Location, FRotator::ZeroRotator);
+	}
+
 }
