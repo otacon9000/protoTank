@@ -25,9 +25,9 @@ public:
 
 
 	UPROPERTY(EditAnywhere)
-		UShapeComponent* rootBox;
+	UShapeComponent* RootBox;
 
 	UPROPERTY(EditAnywhere)
-		float speed = 200.0f;
+	float Speed = 200.0f;
 
 };

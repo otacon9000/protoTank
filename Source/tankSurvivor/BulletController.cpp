@@ -10,7 +10,8 @@ ABulletController::ABulletController()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	rootBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Root"));
+	RootBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Root"));
+	RootBox->SetGenerateOverlapEvents(true);
 
 }
 
@@ -27,11 +28,11 @@ void ABulletController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	//Move bullet
-	FVector newLocation = GetActorLocation();
-	newLocation.X += speed * DeltaTime;
-	SetActorLocation(newLocation);
+	FVector NewLocation = GetActorLocation();
+	NewLocation.X += Speed * DeltaTime;
+	SetActorLocation(NewLocation);
 
 	//Destroy bullet
-	if (newLocation.X > 6000.0f) this->Destroy();
+	if (NewLocation.X > 6000.0f) this->Destroy();
 }
 

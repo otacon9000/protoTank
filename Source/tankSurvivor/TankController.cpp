@@ -27,10 +27,10 @@ void ATankController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (!currentVelocity.IsZero())
+	if (!CurrentVelocity.IsZero())
 	{
-		FVector newLocation = GetActorLocation() + (speed * currentVelocity * DeltaTime);
-		SetActorLocation(newLocation);
+		FVector NewLocation = GetActorLocation() + (speed * CurrentVelocity * DeltaTime);
+		SetActorLocation(NewLocation);
 	}
 }
 
@@ -45,14 +45,14 @@ void ATankController::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 }
 
-void ATankController::MoveAxisX(float axisValue)
+void ATankController::MoveAxisX(float AxisValue)
 {
-	currentVelocity.X = axisValue * 100.0f;
+	CurrentVelocity.X = AxisValue * 100.0f;
 }
 
-void ATankController::MoveAxisY(float axisValue)
+void ATankController::MoveAxisY(float AxisValue)
 {
-	currentVelocity.Y = axisValue * 100.0f;
+	CurrentVelocity.Y = AxisValue * 100.0f;
 }
 
 void ATankController::OnShoot()
@@ -64,7 +64,7 @@ void ATankController::OnShoot()
 		FVector Location = GetActorLocation();
 		UE_LOG(LogTemp, Warning, TEXT("Location, %f %f"), Location.X, Location.Y);
 
-		World->SpawnActor<ABulletController>(bulletBP, Location, FRotator::ZeroRotator);
+		World->SpawnActor<ABulletController>(BulletBP, Location, FRotator::ZeroRotator);
 	}
 
 }

@@ -33,14 +33,14 @@ public:
 	float speed = 10.0f;
 	
 	UPROPERTY(EditAnywhere, Category="Spawning")
-	TSubclassOf<class ABulletController> bulletBP;
+	TSubclassOf<class ABulletController> BulletBP;
 
 
 
-	void MoveAxisX(float axisValue);
-	void MoveAxisY(float axisValue);
+	void MoveAxisX(float AxisValue);
+	void MoveAxisY(float AxisValue);
 	void OnShoot();
 
-	FVector currentVelocity;
+	FVector CurrentVelocity;
 
 };
