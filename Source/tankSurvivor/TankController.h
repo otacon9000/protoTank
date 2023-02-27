@@ -43,4 +43,11 @@ public:
 
 	FVector CurrentVelocity;
 
+	bool Died;
+
+	UFUNCTION()
+	void OnTriggerEnter(class UPrimitiveComponent* OverlappedComponent, 
+		class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex,
+		bool bFromSweep, const FHitResult& SweepResult);
+	
 };

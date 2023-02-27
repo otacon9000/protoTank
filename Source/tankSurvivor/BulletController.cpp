@@ -3,6 +3,7 @@
 
 #include "BulletController.h"
 #include "Components/BoxComponent.h"
+#include "EnemyController.h"
 
 // Sets default values
 ABulletController::ABulletController()
@@ -12,6 +13,7 @@ ABulletController::ABulletController()
 
 	RootBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Root"));
 	RootBox->SetGenerateOverlapEvents(true);
+	RootBox->OnComponentBeginOverlap.AddDynamic(this, &ABulletController::OnTriggerEnter);
 
 }
 
@@ -34,5 +36,14 @@ void ABulletController::Tick(float DeltaTime)
 
 	//Destroy bullet
 	if (NewLocation.X > 6000.0f) this->Destroy();
+}
+
+void ABulletController::OnTriggerEnter(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor->IsA(AEnemyController::StaticClass()))
+	{
+		this->Destroy();
+		OtherActor->Destroy();
+	}
 }
 
