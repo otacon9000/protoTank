@@ -68,7 +68,6 @@ void ATankController::OnShoot()
 	if (World)
 	{
 		FVector Location = GetActorLocation();
-		UE_LOG(LogTemp, Warning, TEXT("Location, %f %f"), Location.X, Location.Y);
 
 		World->SpawnActor<ABulletController>(BulletBP, Location, FRotator::ZeroRotator);
 	}
