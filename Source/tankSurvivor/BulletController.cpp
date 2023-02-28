@@ -4,6 +4,7 @@
 #include "BulletController.h"
 #include "Components/BoxComponent.h"
 #include "EnemyController.h"
+#include "TankGameMode.h"
 
 // Sets default values
 ABulletController::ABulletController()
@@ -44,6 +45,8 @@ void ABulletController::OnTriggerEnter(UPrimitiveComponent* OverlappedComponent,
 	{
 		this->Destroy();
 		OtherActor->Destroy();
+
+		((ATankGameMode*)GetWorld()->GetAuthGameMode())->AddScore();
 	}
 }
 

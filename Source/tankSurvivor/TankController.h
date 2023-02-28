@@ -40,6 +40,7 @@ public:
 	void MoveAxisX(float AxisValue);
 	void MoveAxisY(float AxisValue);
 	void OnShoot();
+	void OnRestart();
 
 	FVector CurrentVelocity;
 

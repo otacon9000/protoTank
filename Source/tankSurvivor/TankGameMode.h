@@ -26,6 +26,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	void AddScore();
+	void GameOver();
 
 	UPROPERTY(EditAnywhere, Category="Spawning")
 	TSubclassOf<class AEnemyController> Enemy_BP;
@@ -33,7 +34,17 @@ public:
 	float EnemyTimer;
 	float GameTimer;
 
+	UFUNCTION(BlueprintCallable, Category="UMG Game")
+	void ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass);
+
 protected:
 	int Score = 0;
+
+	UPROPERTY(EditAnywhere, Category="UMG Game")
+	TSubclassOf<UUserWidget> StartingUserWidgetClass;
+
+	UPROPERTY()
+	UUserWidget* CurrentWidget;
+
 	
 };

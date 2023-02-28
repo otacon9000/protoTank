@@ -3,6 +3,7 @@
 
 #include "TankGameMode.h"
 #include "EnemyController.h"
+#include "GameWidget.h"
 
 ATankGameMode::ATankGameMode()
 {
@@ -14,6 +15,9 @@ ATankGameMode::ATankGameMode()
 void ATankGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ChangeMenuWidget(StartingUserWidgetClass);
+	((UGameWidget*)CurrentWidget)->Load();
 }
 
 void ATankGameMode::Tick(float DeltaTime)
@@ -44,4 +48,29 @@ void ATankGameMode::AddScore()
 {
 	Score += 10;
 	//update UI 
+	((UGameWidget*)CurrentWidget)->SetScore(Score);
+}
+
+void ATankGameMode::GameOver()
+{
+	((UGameWidget*)CurrentWidget)->OnGameOver(Score);
+}
+
+void ATankGameMode::ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass)
+{
+	if (CurrentWidget != nullptr)
+	{
+		CurrentWidget->RemoveFromViewport();
+		CurrentWidget = nullptr;
+	}
+
+	if (NewWidgetClass != nullptr)
+	{
+		CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), NewWidgetClass);
+		if (CurrentWidget != nullptr)
+		{
+			CurrentWidget->AddToViewport();
+		}
+	
+	}
 }

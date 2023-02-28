@@ -6,6 +6,7 @@
 #include "BulletController.h"
 #include "EnemyController.h"
 #include "Kismet/GameplayStatics.h"
+#include "TankGameMode.h"
 
 // Sets default values
 ATankController::ATankController()
@@ -48,6 +49,7 @@ void ATankController::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	InputComponent->BindAxis("MoveX", this, &ATankController::MoveAxisX);
 	InputComponent->BindAxis("MoveY", this, &ATankController::MoveAxisY);
 	InputComponent->BindAction("PrimaryFire", IE_Pressed, this, &ATankController::OnShoot);
+	InputComponent->BindAction("Restart", IE_Pressed, this, &ATankController::OnRestart).bExecuteWhenPaused = true;
 
 }
 
@@ -74,12 +76,22 @@ void ATankController::OnShoot()
 
 }
 
+void ATankController::OnRestart()
+{
+	if (Died)
+	{
+		UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName(), false));
+		//((UGameWidget*)CurrentWidget)->SetScore(0);
+	}
+}
+
 void ATankController::OnTriggerEnter(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor->IsA(AEnemyController::StaticClass()))
 	{
 		Died = true;
 		this->SetActorHiddenInGame(true);
+		((ATankGameMode*)GetWorld()->GetAuthGameMode())->GameOver();
 
 		//pause the game
 		UGameplayStatics::SetGamePaused(GetWorld(), true);
